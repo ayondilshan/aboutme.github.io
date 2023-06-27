@@ -442,72 +442,28 @@
 
 
                 <!-- Contact Start -->
-                <div class="container bg-white py-5" id="contact">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Contact Me</h2>
-                        </div>
-                   
-                        <div class="container">
-                            <div class="form">
-                                <div class="col-md-8 offset-md-2">
-                                 
-                                    <div class="errors">
-                                                    </div>
-                                    <form method="POST" id="target" action="https://formsubmit.co/el/rujeni">
-                                        <input type="hidden" name="_token" value="x55JrKe3At7XQgs8JWzV0W7RyNjxwnzVk5YL6Td0">                <div class="form-group">
-                                            <div class="form-row">
-                                                <div class="col">
-                                                    <label for="name">Full Name</label>
-                                                    <input type="text" id="name" name="name" class="form-control" required
-                                                           value="">
-                                                </div>
-                                                <div class="col">
-                                                    <label for="email">Email Address</label>
-                                                    <input type="email" id="email" name="email" class="form-control" required
-                                                           value="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="subject">Subject</label>
-                                            <input type="text" id="subject" name="subject" class="form-control" required
-                                                   value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="message">Message</label>
-                                            <textarea id="message" class="form-control" name="message" rows="8"
-                                                      required></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group input-group-lg">
-                                                <div id="captcha">
-                                                    <div data-callback="submit" data-theme="dark" data-sitekey="6LdpKIMUAAAAAPH4XLcypBTMPsV7eTWZrznHCndM" class="g-recaptcha"></div>
-                                                    <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
-                        
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input type="hidden" value="" name="url">
-                                        <button type="submit" class="btn btn-lg btn-dark btn-block">Send Message</button>
-                                    </form>
-                                </div>
+                  <!-- Contact Start -->
+                    
+                    <div class="container">
+                        <h2 class="title position-relative pb-2 mb-4">Contact Me</h2>
+                        <form target="_blank" action="https://formspree.io/f/xdovqrjl" method="POST">
+                          <div class="form-group">
+                            <div class="form-row">
+                              <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                              </div>
+                              <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                              </div>
                             </div>
-                            
-                        </div>
-                        <script>
-                            function submit() {
-                                $("#target").unbind('submit').submit()
-                            }
-                        
-                            $(document).ready(function () {
-                                $('#target').on('submit', function (e) {
-                                    e.preventDefault();
-                                    $('#captcha').show();
-                                });
-                            });
-                        </script>
-                <!-- Contact End -->
+                          </div>
+                          <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                        </form>
+                      </div>
+                           
                 
                 
                 <!-- Footer Start -->
